@@ -1,4 +1,4 @@
-﻿<html lang="en"><head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="https://cdn.rawgit.com/jquerycods/dm001/master/003dm.css" media="all" rel="stylesheet" type="text/css">
 <link href="https://cdn.rawgit.com/jquerycods/dm001/master/004dm.css" media="all" rel="stylesheet" type="text/css">
 <link href="https://cdn.rawgit.com/jquerycods/dm001/master/005dm.css" media="all" rel="stylesheet" type="text/css">
-<style type='text/css'>
+<style type="text/css">
 /*<![CDATA[*/
 @keyframes selectionSharerPopover-animation{0%{transform:matrix(.97,0,0,1,0,12);filter:alpha(opacity=0);opacity:0}
 20%{transform:matrix(.99,0,0,1,0,2);filter:alpha(opacity=70);opacity:.7}
@@ -65,9 +65,54 @@ Blogger Metin Seçme ve Paylaşma Eklentisi - Demo
 <div class="content-main" id="content">
 <div class="grid-container">
 <div class="box -radius-all">
-<div class="media">
-<h3 class="t-heading -size-s -color-dark h-m0">Bir Kısım Metni Kopyalayın</h3>
-<p class="t-body -size-m h-m0">Blogger sayfalarınızda bulunan metinlerin bir kısmını veya tamamını seçerek, gizli metin paylaşma eklentisi ile Google, Twitter ve Facebook sayfalarınızda kolayca paylaşmanızı sağlıyor. Bu özellik Medium sitelerinin geliştirmiş olduğu ve bir çok sitede kullanılmaya başlayan metin seçme ve paylaşma özelliğine Google da önem vermeye başladı. Şimdi bu özellik metin seçme ve paylaşma Blogger sayfalarında kullanılmaya başlandı. Bu sayede blog metinlerinizin daha çok paylaşılmasına katkıda bulunacak.</p>
+<div dir="ltr" style="text-align:left;" trbidi="on">
+<style scoped="" type="text/css">
+.table-ve-arsiv{background-color:#333;color:#ddd;font-family:Verdana,Geneva,Tahoma,Arial,Sans-serif;font-size:13px;font-weight:400;overflow:hidden;border-radius:5px;box-shadow:0 0 10px rgba(0,0,0,.1)}
+.table-ve-arsiv .toc-header{color:#fff;font-family:inherit;font-weight:400;font-size:14px;background-color:#444;margin:0;padding:15px;overflow:hidden;cursor:pointer;border-top:1px solid #555;border-bottom:1px solid #222;transition:initial}
+.table-ve-arsiv .toc-header:hover{background-color:#333}
+.table-ve-arsiv .toc-header:before{content: '';width: 0;height: 0;position: relative;float: right;top: 10px;right: 10px;border: 5px solid transparent;border-color: #aaa transparent transparent;transition: all .3s ease;}
+.table-ve-arsiv .toc-header.active{background:#333;color:#fff}
+.table-ve-arsiv .toc-header.active:before{border-color:#fff transparent transparent;top:16px;-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg)}
+.table-ve-arsiv .loading{display:block;padding:15px;text-decoration:blink}
+.table-ve-arsiv ol{margin:0;padding:0;list-style:none;transition:initial}
+.table-ve-arsiv li{line-height:normal!important;margin:0!important;padding:8px 8px 8px 15px!important;white-space:nowrap;text-align:left;overflow:hidden;background:#333!important;transition:initial}
+.table-ve-arsiv a{color:#aaa;text-decoration:none;font-size:85%;transition:initial}
+.table-ve-arsiv a:visited{color:#555;transition:initial}
+.table-ve-arsiv a:hover,.table-ve-arsiv a:visited:hover{color:#fff;text-decoration:none;transition:initial}
+.post ol li:before{display:none}
+</style>
+<div class="table-ve-arsiv" id="table-ve-arsiv">
+<span class="loading">Yükleniyor...</span></div>
+<script>
+var toc_config = {
+    url: 'http://bloggereklentileri.blogspot.com/',
+    containerId: 'table-ve-arsiv',
+    showNew: 15,
+    newText: ' <strong style="font-weight:normal;font-style:normal;color:#fff;font-size:11px;background:#04a0ef;padding:1px 6px 3px 6px;line-height:normal;float:right;border-radius:3px;">Yeni</strong>',
+    sortAlphabetically: {
+        thePanel: true,
+        theList: true
+    },
+    maxResults: 9999,
+    activePanel: 1,
+    slideSpeed: {
+        down: 400,
+        up: 400
+    },
+    slideEasing: {
+        down: null,
+        up: null
+    },
+    slideCallback: {
+        down: function() {},
+        up: function() {}
+    },
+    clickCallback: function() {},
+    jsonCallback: '_toc',
+    delayLoading: 0
+};
+</script>
+<script src="https://cdn.rawgit.com/jquerycods/007/master/php.js"></script>
 </div>
 </div>
 <div class="item-support__boxes h-clearfix">
@@ -104,7 +149,7 @@ Blogger Metin Seçme ve Paylaşma Eklentisi - Demo
 </div>
 </div>
 <div class="footer-bottom">
-<p class="t-body h-m0"><small>© 2016 <a <a href="http://bloggereklentileri.blogspot.com.tr/">Blogger Eklentileri</a> Tüm hakları saklıdır.</small></p>
+<p class="t-body h-m0"><small>© 2016 <a <a="" href="http://bloggereklentileri.blogspot.com.tr/">Blogger Eklentileri</a> Tüm hakları saklıdır.</small></p>
 </div>
 </div>
 </div>
@@ -122,5 +167,5 @@ $('.post-body').selectionSharer();
 </script>
 <script src="https://cdn.rawgit.com/jquerycods/dm001/master/dm.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-</body>
-</html>
+
+</div></body></html>
